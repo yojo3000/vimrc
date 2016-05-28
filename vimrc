@@ -91,7 +91,7 @@ nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
 nnoremap <Tab> <c-w>W				" use <Tab> to switch between windows
 nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whitespace at the end of any line
 
-colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
+"colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
 
 let g:airline#extensions#tabline#enabled = 1	" enable the upper buffer line

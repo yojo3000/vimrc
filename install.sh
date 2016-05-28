@@ -9,5 +9,5 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc
 cd ~/vimrc
 cp vimrc ~/.vimrc
 vim +PluginInstall +qall
-
+echo "colorscheme gruvbox" >> ~/.vimrc
 rm -rf ~/vimrc
