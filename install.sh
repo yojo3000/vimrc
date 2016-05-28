@@ -10,3 +10,4 @@ cd ~/vimrc
 cp vimrc ~/.vimrc
 vim +PluginInstall +qall
 
+rm -rf ~/vimrc
