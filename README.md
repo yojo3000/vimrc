@@ -2,9 +2,16 @@
 Mars' vimrc
 
 ###Usage:
+####bash, zsh
 ```
 git clone https://github.com/yojo3000/vimrc.git ~/vimrc && sh ~/vimrc/install.sh
 ```
+####fish
+ ```
+git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install.sh
+```
+
+
 
 ###hot key:
 ```
