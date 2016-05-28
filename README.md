@@ -3,7 +3,7 @@ Mars' vimrc
 
 ###Usage:
 ```
-git clone https://raw.githubusercontent.com/yojo3000/vimrc/master/install.sh && sh install.sh
+git clone https://github.com/yojo3000/vimrc.git ~/vimrc && sh ~/vimrc/install.sh
 ```
 
 ###hot key:
