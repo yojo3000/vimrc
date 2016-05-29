@@ -1,6 +1,11 @@
 # vimrc
 Mars' vimrc
 
+Please make sure your system has vim editor<br>
+for Mac OS, please install homebrew package manager (<a href="http://brew.sh">Homebrew website</a>)<br>
+I suggest to use homebrew to install vim instead of using system built in vim (for clipboard issue)<br>
+(brew install vim)
+
 ###Usage:
 ####bash, zsh
 ```
