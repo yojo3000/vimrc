@@ -86,7 +86,7 @@ filetype plugin indent on
 nnoremap <F1> <nop>					" disable the help message of <F1> butotn
 nnoremap <F1> :NERDTreeToggle<CR>	: set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
-nnoremap <C-p> :bprevious<CR>		" switch to the previous buffer
+nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
 nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
 nnoremap <Tab> <c-w>W				" use <Tab> to switch between windows
 nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whitespace at the end of any line

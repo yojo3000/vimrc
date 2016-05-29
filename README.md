@@ -33,3 +33,11 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install.
 ```
 <Ctrl+p> in normal mode: open/close ctrlp window for file open interface
 ```
+
+```
+<Ctrl+n> in normal mode: move to next tab in buffer
+```
+
+```
+<Ctrl+m> in normal mode: move to previous tab in buffer
+```
