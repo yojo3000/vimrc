@@ -86,7 +86,8 @@ nnoremap <F1> :NERDTreeToggle<CR>	: set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
 nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
 nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
-
+nnoremap <Tab> <c-w>W				" use <Tab> to switch between 				windows
+nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whit	espace at the end of any line
 
 let g:smooth_scroll_duration=50
 nnoremap <silent> <S-Up> :call smooth_scroll#up(&scroll/4, smooth_scroll_duration, 2)<CR>
