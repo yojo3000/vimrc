@@ -47,3 +47,11 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install_
 ```
 <Ctrl+m> in normal mode: move to previous tab in buffer
 ```
+
+```
+<Shift+Up> in normal/insert mode: scroll page up
+```
+
+```
+<Shift+Down> in normal/insert mode: scroll page down
+```

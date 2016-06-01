@@ -75,23 +75,26 @@ Plugin 'L9'
 Plugin 'othree/vim-autocomplpop'
 
 Plugin 'ntpeters/vim-better-whitespace'	" mark the whitespace at the end of any line
-
+Plugin 'terryma/vim-smooth-scroll'
 call vundle#end()
 
 filetype plugin indent on
 " plugin: allow vim to load  document type plugin
 " indent: allow vim set different tab size or layout type for different type of document
-
-" noremap: no recursive, n: in normal mode
 nnoremap <F1> <nop>					" disable the help message of <F1> butotn
 nnoremap <F1> :NERDTreeToggle<CR>	: set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
 nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
 nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
-nnoremap <Tab> <c-w>W				" use <Tab> to switch between windows
-nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whitespace at the end of any line
 
-"colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
+
+let g:smooth_scroll_duration=50
+nnoremap <silent> <S-Up> :call smooth_scroll#up(&scroll/4, smooth_scroll_duration, 2)<CR>
+nnoremap <silent> <S-Down> :call smooth_scroll#down(&scroll/4, smooth_scroll_duration, 2)<CR>
+inoremap <silent> <S-Up> <ESC>:call smooth_scroll#up(&scroll/4, smooth_scroll_duration, 2)<CR>i
+inoremap <silent> <S-Down> <ESC>:call smooth_scroll#down(&scroll/4, smooth_scroll_duration, 2)<CR>i
+
+colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
 
 let g:airline#extensions#tabline#enabled = 1	" enable the upper buffer line
