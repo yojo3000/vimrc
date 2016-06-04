@@ -59,3 +59,8 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install_
 ```
 <Ctrl+f> in normal/insert mode: search specific string
 ```
+```
+:W => map to :w
+:Q => map to :q
+:WQ, :Wq, :wQ => all map to :wq
+```

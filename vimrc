@@ -102,6 +102,11 @@ inoremap <C-s> <ESC>:w<CR>i
 nnoremap <C-f> /
 inoremap <C-f> <ESC>/
 
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
 
