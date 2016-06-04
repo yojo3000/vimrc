@@ -55,3 +55,7 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install_
 ```
 <Shift+Down> in normal/insert mode: scroll page down
 ```
+
+```
+<Ctrl+f> in normal/insert mode: search specific string
+```

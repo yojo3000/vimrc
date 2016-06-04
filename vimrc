@@ -26,7 +26,7 @@ set nowrap			" do not wrap the long string
 set mouse=a			" let mouse control enable
 set clipboard=unnamed " let vim clipboard and system clipboard sync (if vim compile with clipboard enable)
 set whichwrap=<,>	" cursor left end to upper line right end, vise versa
-syntax on
+syntax on			" let vim hightlight special words
 
 " tagbar setting
 "let g:tagbar_autoclose=1	" close tagbar when select some tag in tagbar
@@ -82,18 +82,25 @@ filetype plugin indent on
 " plugin: allow vim to load  document type plugin
 " indent: allow vim set different tab size or layout type for different type of document
 nnoremap <F1> <nop>					" disable the help message of <F1> butotn
-nnoremap <F1> :NERDTreeToggle<CR>	: set hotkey of NerdTree
+nnoremap <F1> :NERDTreeToggle<CR>	" set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
 nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
 nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
-nnoremap <Tab> <c-w>W				" use <Tab> to switch between 				windows
-nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whit	espace at the end of any line
+nnoremap <Tab> <c-w>W				" use <Tab> to switch between windows
+nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whitespace at the end of any line
 
 let g:smooth_scroll_duration=50
 nnoremap <silent> <S-Up> :call smooth_scroll#up(&scroll/4, smooth_scroll_duration, 2)<CR>
 nnoremap <silent> <S-Down> :call smooth_scroll#down(&scroll/4, smooth_scroll_duration, 2)<CR>
 inoremap <silent> <S-Up> <ESC>:call smooth_scroll#up(&scroll/4, smooth_scroll_duration, 2)<CR>i
 inoremap <silent> <S-Down> <ESC>:call smooth_scroll#down(&scroll/4, smooth_scroll_duration, 2)<CR>i
+
+nnoremap <C-s> :w<CR>				" Ctrl + s to save file, keep in normal mode
+inoremap <C-s> <ESC>:w<CR>i
+" Ctrl + s to save file nad go back to insert mode
+
+nnoremap <C-f> /
+inoremap <C-f> <ESC>/
 
 colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
