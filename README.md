@@ -6,7 +6,6 @@ for Mac OS, please install homebrew package manager (<a href="http://brew.sh">Ho
 I suggest to use homebrew to install vim instead of using system built in vim (for clipboard issue)<br>
 (brew install vim)
 
-vimrc only suggest to use on Mac for now, it looks just like shit in linux...<br>
 ###Usage:
 ####bash, zsh
 ```

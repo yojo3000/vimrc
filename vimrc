@@ -107,7 +107,7 @@ inoremap <C-f> <ESC>/
 :command W w
 :command Q q
 
-let g:gruvbox_contrast_dark="soft"
+let g:gruvbox_contrast_dark="hard"
 set t_Co=256
 colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
