@@ -109,7 +109,6 @@ inoremap <C-f> <ESC>/
 
 let g:gruvbox_contrast_dark="hard"
 set t_Co=256
-colorscheme gruvbox		" set the vim theme of Plugin 'morhetz/gruvbox'
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
 
 let g:airline#extensions#tabline#enabled = 1	" enable the upper buffer line
@@ -143,4 +142,3 @@ endfunction
 autocmd WinEnter * call NERDTreeQuit()
 
 
-colorscheme gruvbox
