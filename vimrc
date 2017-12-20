@@ -11,11 +11,14 @@
 " you will see +clipboard
 " and then set clipboard=unnamed
 
-set backspace=start,eol,indent	" let backspace in mac work fine
-set number 			" line number
-set tabstop=4 		" tab space
-set encoding=utf-8 	" encode
-set cursorline 		" underline on current line
+set backspace=start,eol,indent		" let backspace in mac work fine
+set number							" line number
+set tabstop=4						" let one tab equal to 4 space
+set softtabstop=4					" let backspace delete tab
+set shiftwidth=4					" let reindent be 4 space
+set encoding=utf-8					" encode
+set cursorline						" underline on current line
+set smartindent
 "set cursorcolumn
 set nocompatible 	" not compatible with vi's bull shit
 set hlsearch		" highlight search result
@@ -28,6 +31,8 @@ set clipboard=unnamed " let vim clipboard and system clipboard sync (if vim comp
 set whichwrap=<,>	" cursor left end to upper line right end, vise versa
 syntax on			" let vim hightlight special words
 
+let mapleader = ","
+
 " tagbar setting
 "let g:tagbar_autoclose=1	" close tagbar when select some tag in tagbar
 let g:tagbar_autofocus = 0 	" when open the tagbar, the cursor will focus on tagbar or not
@@ -37,7 +42,7 @@ let g:tagbar_width = 25		" set tagbar width
 
 " for window setting
 autocmd VimEnter * nested :call tagbar#autoopen(1)	" auto open tagbar when using vim
-au VimEnter *  NERDTree								" auto open NerdTree when using vim
+autocmd VimEnter * NERDTree								" auto open NerdTree when using vim
 autocmd VimEnter * wincmd p							" auto focus on this window
 
 " for vundle init setting
@@ -52,6 +57,7 @@ Plugin 'VundleVim/Vundle.vim'		" let Vundle to manage vim plugin
 
 Plugin 'vim-airline/vim-airline'	" good status line below
 Plugin 'scrooloose/nerdtree'		" show folder tree in vim, map <Tab> to do so
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'morhetz/gruvbox'			" color scheme of vim
 
 Plugin 'ap/vim-css-color'			" highlight with the color of color code in css file
@@ -142,3 +148,4 @@ endfunction
 autocmd WinEnter * call NERDTreeQuit()
 
 
+colorscheme gruvbox
