@@ -20,44 +20,53 @@ git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install_
 
 ###hot key:
 ```
-<F9> in normal mode: open/close tagbar window
+<F9>		normal mode:			open/close tagbar window
 ```
 
 ```
-<F1> in normal mode: open/close NerdTree windows
+<F1>		normal mode:			open/close NerdTree windows
 ```
 
 ```
-<Tab> in normal mode: switch between windows
+<Tab>		normal mode:			switch between windows
 ```
 
 ```
-<F2> in normal mode: clean all whitespace of any end of line
+<F2>		normal mode:			clean all whitespace of any end of line
 ```
 
 ```
-<Ctrl+p> in normal mode: open/close ctrlp window for file open interface
+<Ctrl+p>	normal mode:			open/close ctrlp window for file open interface
 ```
 
 ```
-<Ctrl+n> in normal mode: move to next tab in buffer
+<Ctrl+n>	normal mode:			move to next tab in buffer
 ```
 
 ```
-<Ctrl+m> in normal mode: move to previous tab in buffer
+<Ctrl+m>	normal mode:			move to previous tab in buffer
 ```
 
 ```
-<Shift+Up> in normal/insert mode: scroll page up
+<Shift+Up>	normal/insert mode:		scroll page up
 ```
 
 ```
-<Shift+Down> in normal/insert mode: scroll page down
+<Shift+Down> in normal/insert mode:	scroll page down
 ```
 
 ```
-<Ctrl+f> in normal/insert mode: search specific string
+<Ctrl+f> in normal/insert mode:		search specific string
 ```
+
+```
+<,+cc> in normal mode:				add comment on this line (or use Ctrl + V to select multiple line) 
+```
+
+```
+<,+cu> in normal mode:				remove comment on this line (or use Ctrl + V to select multiple line) 
+```
+
 ```
 :W => map to :w
 :Q => map to :q
