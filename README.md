@@ -6,19 +6,14 @@ for Mac OS, please install homebrew package manager (<a href="http://brew.sh">Ho
 I suggest to use homebrew to install vim instead of using system built in vim (for clipboard issue)<br>
 (brew install vim)
 
-###Usage:
-####bash, zsh
+### Usage:
+
 ```
-git clone https://github.com/yojo3000/vimrc.git ~/vimrc && sh ~/vimrc/install_(your OS).sh
-```
-####fish
- ```
-git clone https://github.com/yojo3000/vimrc.git ~/vimrc; and sh ~/vimrc/install_(your OS).sh
+git clone https://github.com/yojo3000/vimrc.git ~/vimrc; sh ~/vimrc/install_(your OS).sh
 ```
 
 
-
-###hot key:
+### Hot Key:
 ```
 <F9>		normal mode:			open/close tagbar window
 ```
