@@ -122,28 +122,3 @@ let g:airline#extensions#tabline#enabled = 1	" enable the upper buffer line
 " NerdTree setting
 let g:NERDTreeWinSize=25	" NerdTree width
 
-" auto quit NerdTree when no active buffer
-function! NERDTreeQuit()
-	redir => buffersoutput
-	silent buffers
-	redir END
-
-	let pattern = '^\s*\(\d\+\)\(.....\) "\(.*\)"\s\+line \(\d\+\)$'
-	let windowfound = 0
-
-	for bline in split(buffersoutput, "\n")
-		let m = matchlist(bline, pattern)
-
-		if (len(m) > 0)
-			if (m[2] =~ '..a..')
-				let windowfound = 1
-			endif
-		endif
-	endfor
-
-	if (!windowfound)
-		quitall
-	endif
-endfunction
-autocmd WinEnter * call NERDTreeQuit()
-
