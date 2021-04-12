@@ -75,6 +75,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
+let g:snipMate = {}
+let g:snipMate.snippet_version = 1
 
 " L9 is for autocomplpop's dependency
 Plugin 'L9'
@@ -145,5 +147,5 @@ function! NERDTreeQuit()
 		quitall
 	endif
 endfunction
-"autocmd WinEnter * call NERDTreeQuit()
+autocmd WinEnter * call NERDTreeQuit()
 
