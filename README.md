@@ -1,5 +1,4 @@
 # vimrc
-Mars' vimrc
 
 Please make sure your system has vim editor<br>
 for Mac OS, please install homebrew package manager (<a href="http://brew.sh">Homebrew website</a>)<br>
