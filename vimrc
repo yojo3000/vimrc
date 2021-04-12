@@ -34,7 +34,7 @@ syntax on			" let vim hightlight special words
 let mapleader = ","
 
 " tagbar setting
-"let g:tagbar_autoclose=1	" close tagbar when select some tag in tagbar
+let g:tagbar_autoclose=1	" close tagbar when select some tag in tagbar
 let g:tagbar_autofocus = 0 	" when open the tagbar, the cursor will focus on tagbar or not
 let g:tagbar_compact = 1	" show the help message on top of the tag bar or not
 let g:tagbar_show_linenumbers = 1	" show line number on tagbar or not
