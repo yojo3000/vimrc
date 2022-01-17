@@ -19,7 +19,7 @@ set shiftwidth=4					" let reindent be 4 space
 set encoding=utf-8					" encode
 set cursorline						" underline on current line
 set smartindent
-"set cursorcolumn
+set cursorcolumn
 set nocompatible 	" not compatible with vi's bull shit
 set hlsearch		" highlight search result
 set noswapfile		" do no create swp file
@@ -63,7 +63,7 @@ Plugin 'morhetz/gruvbox'			" color scheme of vim
 Plugin 'ap/vim-css-color'			" highlight with the color of color code in css file
 Plugin 'gregsexton/MatchTag'		" highlight the same pair of html tag
 
-Plugin 'majutsushi/tagbar'			" show code function or other info on window
+Plugin 'preservim/tagbar'			" show code function or other info on window
 " for tagbar's dependency
 " in Mac OS:	brew install ctag
 " in Ubuntu:	sudo apt-get install exuberant-ctags
