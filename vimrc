@@ -43,7 +43,7 @@ let g:tagbar_width = 25		" set tagbar width
 " for window setting
 autocmd VimEnter * nested :call tagbar#autoopen(1)	" auto open tagbar when using vim
 autocmd VimEnter * NERDTree								" auto open NerdTree when using vim
-autocmd VimEnter * wincmd p							" auto focus on this window
+autocmd VimEnter * wincmd l							" auto focus on this window
 
 " for vundle init setting
 filetype off						" this will open after plugin setting
