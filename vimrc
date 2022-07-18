@@ -56,6 +56,7 @@ Plugin 'VundleVim/Vundle.vim'		" let Vundle to manage vim plugin
 " git clone https://github.com/VundleVim/Vundle.vim.git (in ~/.vim/bundle/)
 
 Plugin 'vim-airline/vim-airline'	" good status line below
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'		" show folder tree in vim, map <Tab> to do so
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'morhetz/gruvbox'			" color scheme of vim
@@ -93,6 +94,18 @@ nnoremap <F1> <nop>					" disable the help message of <F1> butotn
 nnoremap <F1> :NERDTreeToggle<CR>	" set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
 nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
+
+"nnoremap <leader>1	:bp<CR>:bd1<CR>
+"nnoremap <leader>2	:bp<CR>:bd2<CR>
+"nnoremap <leader>7	:bp<CR>:bd7<CR>
+"nnoremap <leader>8	:bp<CR>:bd8<CR>
+"
+for i in range(1, 20)
+	execute 'nnoremap <leader>'.i.' :bp<CR>:bd'.i.'<CR>'
+endfor
+
+"nnoremap <C-,>	:b#|bd# <CR>
+"
 nnoremap <F9> :TagbarToggle<CR>		" set hotkey of tagbar
 nnoremap <Tab> <c-w>W				" use <Tab> to switch between windows
 nnoremap <F2> :StripWhitespace<CR>	" use <F2> to clean the whitespace at the end of any line
@@ -120,6 +133,10 @@ set t_Co=256
 set background=dark		" set dark theme of Plugin 'morhetz/gruvbox'
 
 let g:airline#extensions#tabline#enabled = 1	" enable the upper buffer line
+"let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+let g:airline_theme="deus"
 
 " NerdTree setting
 let g:NERDTreeWinSize=25	" NerdTree width
@@ -149,3 +166,4 @@ function! NERDTreeQuit()
 endfunction
 autocmd WinEnter * call NERDTreeQuit()
 
+colorscheme gruvbox
