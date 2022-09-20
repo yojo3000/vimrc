@@ -2,7 +2,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install git build-essential python-dev exuberant-ctags universal-ctags -y
+sudo apt-get install git build-essential python3-dev exuberant-ctags universal-ctags -y
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/yojo3000/vimrc.git ~/vimrc
