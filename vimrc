@@ -85,6 +85,8 @@ Plugin 'othree/vim-autocomplpop'
 
 Plugin 'ntpeters/vim-better-whitespace'	" mark the whitespace at the end of any line
 Plugin 'terryma/vim-smooth-scroll'
+
+Plugin 'hashivim/vim-terraform'
 call vundle#end()
 
 filetype plugin indent on
