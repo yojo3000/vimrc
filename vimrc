@@ -168,4 +168,3 @@ function! NERDTreeQuit()
 endfunction
 autocmd WinEnter * call NERDTreeQuit()
 
-colorscheme gruvbox
