@@ -97,6 +97,8 @@ nnoremap <F1> :NERDTreeToggle<CR>	" set hotkey of NerdTree
 nnoremap <C-n> :bnext<CR>			" switch to the next buffer
 nnoremap <C-m> :bprevious<CR>		" switch to the previous buffer
 
+cmap w!! w !sudo tee > /dev/null %	" save file with sudo command
+
 "nnoremap <leader>1	:bp<CR>:bd1<CR>
 "nnoremap <leader>2	:bp<CR>:bd2<CR>
 "nnoremap <leader>7	:bp<CR>:bd7<CR>

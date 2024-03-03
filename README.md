@@ -82,4 +82,5 @@ remove buffer tab by buffer number
 :W => map to :w
 :Q => map to :q
 :WQ, :Wq, :wQ => all map to :wq
+:w!! => map to privilege escalating writing (sudo)
 ```
