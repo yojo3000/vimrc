@@ -87,6 +87,8 @@ Plugin 'ntpeters/vim-better-whitespace'	" mark the whitespace at the end of any 
 Plugin 'terryma/vim-smooth-scroll'
 
 Plugin 'hashivim/vim-terraform'
+Plugin 'kh3phr3n/python-syntax'		" Python Syntax Highlight
+let python_highlight_all = 1
 call vundle#end()
 
 filetype plugin indent on
